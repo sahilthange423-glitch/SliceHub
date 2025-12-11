@@ -1,4 +1,4 @@
-import { Pizza } from './types';
+import { Pizza } from './types.ts';
 
 export const MENU_ITEMS: Pizza[] = [
   {

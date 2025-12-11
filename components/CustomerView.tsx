@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useStore } from '../store/StoreContext';
+import { useStore } from '../store/StoreContext.tsx';
 import { ShoppingCart, Star, Plus, Minus, Trash2, MapPin, CreditCard, Sparkles, ChefHat } from 'lucide-react';
-import { Button, Input, Modal, Badge } from './Shared';
-import { getPizzaRecommendation } from '../services/geminiService';
-import { Pizza, Order } from '../types';
+import { Button, Input, Modal, Badge } from './Shared.tsx';
+import { getPizzaRecommendation } from '../services/geminiService.ts';
+import { Pizza, Order } from '../types.ts';
 
 export const CustomerView: React.FC<{ setView: (v: string) => void, currentView: string }> = ({ setView, currentView }) => {
   const { menu, cart, addToCart } = useStore();

@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { MENU_ITEMS } from "../constants";
+import { MENU_ITEMS } from "../constants.ts";
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 

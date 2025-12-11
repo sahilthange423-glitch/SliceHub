@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { User, Pizza, CartItem, Order, UserRole } from '../types';
-import { MENU_ITEMS, MOCK_ORDERS } from '../constants';
+import { User, Pizza, CartItem, Order, UserRole } from '../types.ts';
+import { MENU_ITEMS, MOCK_ORDERS } from '../constants.ts';
 
 interface StoreContextType {
   user: User | null;

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { StoreProvider, useStore } from './store/StoreContext';
-import { AdminDashboard } from './components/AdminDashboard';
-import { CustomerView } from './components/CustomerView';
-import { Modal, Input, Button } from './components/Shared';
+import { StoreProvider, useStore } from './store/StoreContext.tsx';
+import { AdminDashboard } from './components/AdminDashboard.tsx';
+import { CustomerView } from './components/CustomerView.tsx';
+import { Modal, Input, Button } from './components/Shared.tsx';
 import { Pizza, ShoppingBag, User as UserIcon, LogOut } from 'lucide-react';
-import { UserRole } from './types';
+import { UserRole } from './types.ts';
 
 // Wrapper component to use the context
 const AppContent: React.FC = () => {

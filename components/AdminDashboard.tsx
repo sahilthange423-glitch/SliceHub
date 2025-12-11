@@ -1,8 +1,8 @@
 import React from 'react';
-import { useStore } from '../store/StoreContext';
+import { useStore } from '../store/StoreContext.tsx';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 import { Package, DollarSign, Users, Clock, CheckCircle, Truck, XCircle } from 'lucide-react';
-import { Badge, Button } from './Shared';
+import { Badge, Button } from './Shared.tsx';
 
 export const AdminDashboard: React.FC = () => {
   const { orders, updateOrderStatus, user, logout } = useStore();
